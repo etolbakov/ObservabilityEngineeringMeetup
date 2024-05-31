@@ -1,0 +1,6 @@
+ingest_timestamp_pipeline:
+  description: example pipeline
+  processors:
+    - set:
+        field: "indexed_timestamp"
+        value: "{{_ingest.timestamp}}"

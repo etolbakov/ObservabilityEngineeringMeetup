@@ -1,0 +1,8 @@
+- _id: "index-pattern:my-logs"
+  _source:
+    index-pattern:
+      timeFieldName: "@timestamp"
+      title: "my-logs*"
+      fieldFormatMap: "{\"payload_size\":{\"id\":\"bytes\"}}"
+    references: []
+    type: "index-pattern"
