@@ -2,7 +2,7 @@
   _source:
     index-pattern:
       timeFieldName: "@timestamp"
-      title: "my-logs*"
+      title: "${pass_from_terraform}my-logs*"
       fieldFormatMap: "{\"payload_size\":{\"id\":\"bytes\"}}"
     references: []
     type: "index-pattern"
