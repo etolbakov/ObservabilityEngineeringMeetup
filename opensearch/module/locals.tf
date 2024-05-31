@@ -15,7 +15,7 @@ locals {
   }, var.ism_policies)
 
   ingest_pipelines = merge({
-    for filename in var.ingest_pipelines :
+    for filename in var.ingest_pipelines_files :
     replace(basename(filename), "/\\.yaml.tftpl$/", "") => yamldecode(file(filename))
   }, var.ingest_pipelines)
 
