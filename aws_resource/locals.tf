@@ -6,6 +6,12 @@ locals {
       master_node_number   = 3
       data_node_type       = "r6g.2xlarge.search"
       data_node_number     = 3
+    },
+    cluster-y = {
+      
+    },
+    cluster-z = {
+
     }
   }
 }
